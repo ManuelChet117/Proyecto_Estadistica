@@ -25,7 +25,7 @@ public class Fondo1 extends JPanel {
         try {
             tracker = new MediaTracker(componente);
             Toolkit hr = Toolkit.getDefaultToolkit();
-            imagenc = hr.getImage(getClass().getResource("/FONDOS/inicioDefi.jpg"));
+            imagenc = hr.getImage(getClass().getResource("/FONDOS/iniciode.jpg"));
             tracker.addImage(imagenc, 1);
             tracker.waitForAll();
         } 
