@@ -5,7 +5,7 @@
  */
 package ventanas;
 
-import Codigo.Fondo2;
+
 
 /**
  *
@@ -52,7 +52,7 @@ public class Teoremas1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new Fondo2(this);
+        jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
