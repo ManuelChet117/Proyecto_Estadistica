@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ventanas;
 
 /**
@@ -15,9 +10,7 @@ public class teo1 extends javax.swing.JFrame {
     public String mostrar;
     
     
-    /**
-     * Creates new form teo1
-     */
+   
     public teo1() {
         initComponents();
     }
