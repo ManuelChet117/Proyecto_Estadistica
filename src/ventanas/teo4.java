@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ventanas;
 
 /**
@@ -17,6 +13,13 @@ public class teo4 extends javax.swing.JFrame {
     public teo4() {
         initComponents();
     }
+    
+    //VARIABLES
+     int tot, totd; 
+     double fac = 1;
+     double fact= 1;
+     long numer = tot;
+     double totaldefi;
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -33,8 +36,13 @@ public class teo4 extends javax.swing.JFrame {
         jTextField4 = new javax.swing.JTextField();
         jTextField5 = new javax.swing.JTextField();
         jTextField6 = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
+        jTextField8 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -43,7 +51,7 @@ public class teo4 extends javax.swing.JFrame {
         jTextField2.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
         jTextField2.setForeground(new java.awt.Color(0, 0, 0));
         jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 260, 60, 40));
+        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 260, 60, 40));
 
         jTextField3.setFont(new java.awt.Font("Quicksilver", 1, 18)); // NOI18N
         jTextField3.setForeground(new java.awt.Color(0, 0, 0));
@@ -53,12 +61,17 @@ public class teo4 extends javax.swing.JFrame {
                 jTextField3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 340, 140, 40));
+        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 330, 140, 40));
 
         jTextField4.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
         jTextField4.setForeground(new java.awt.Color(0, 0, 0));
         jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 380, 200, 40));
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 390, 200, 40));
 
         jTextField5.setFont(new java.awt.Font("Quicksilver", 1, 18)); // NOI18N
         jTextField5.setForeground(new java.awt.Color(0, 0, 0));
@@ -80,6 +93,22 @@ public class teo4 extends javax.swing.JFrame {
         });
         jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 490, 210, 40));
 
+        jButton2.setText("b");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 270, 50, 40));
+
+        jButton1.setText("add");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 270, 40, 40));
+
         jLabel5.setFont(new java.awt.Font("Quicksand Medium", 0, 48)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("=");
@@ -87,6 +116,15 @@ public class teo4 extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/teoremasF/T4.jpg"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 640));
+
+        jTextField1.setText("jTextField1");
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 380, -1, -1));
+
+        jTextField7.setText("jTextField7");
+        jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 430, -1, -1));
+
+        jTextField8.setText("jTextField8");
+        jPanel1.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 470, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -113,6 +151,20 @@ public class teo4 extends javax.swing.JFrame {
     private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField6ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        addn();
+        
+    
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        jTextField2.setText("");
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -148,15 +200,102 @@ public class teo4 extends javax.swing.JFrame {
             }
         });
     }
+    
+    public void addn(){
+     String muestra;
+        
+     //AGREGANDOLE TEXTO 
+    jTextField4.setText(jTextField4.getText()+ jTextField2.getText()+"! "); 
+    //CONVIRTIENDO STRING A INT
+    tot = Integer.parseInt(jTextField2.getText());
+    
+    //METODO FACTORIAL
+    facto();
+    double fac = 1;
+    long numer = tot;
+    for (double i = numer; i > 0; i--) {
+            fac = fac *i;
+        }//VERIFICANDO 
+        System.out.println("abajo");
+        System.out.println(fac);
+        
+         fact = fac * fact;
+        System.out.println(fact);
+   
+    
+    //SUMANDO VALORES
+    totd = totd + tot;
+    
+    //VERIFICANDO
+        System.out.println(totd);
+    //BORRANDO CAJA DE TEXTO
+    jTextField2.setText("");
+        
+    
+    //SETEANDO UN TEXTO 
+    muestra = String.valueOf(totd);
+    jTextField3.setText(muestra + "!");
+    
+    
+    //
+     
+    long fac2 = 1;
+    long numer2 = totd;
+    
+        for (long i = numer2; i > 0; i--) {
+            fac2 = fac2 *i;
+        }//VERIFICANDO 
+        System.out.println("arriba");
+        System.out.println(fac2);
+        
+        //RESPUESTA 
+        double Respuesta = (fac2/fact);
+        System.out.println("LA RESPUESTA " + Respuesta);
+        
+        //CONVIRTIENDO DATO NUMERICO A TEXTO
+        String RespuestaDefi;
+        RespuestaDefi = String.valueOf(Respuesta);
+        
+        //MOSTRANDO RESULTADO
+        jTextField5.setText(RespuestaDefi);
+        jTextField6.setText(RespuestaDefi);
+        
+    
+    
+    //
+       //totaldefi = fac2 / fact;
+       // System.out.println(totaldefi);
+    //jTextField5.setText();
+    
+    }
+    
+    public void facto(){
+    
+        
+        
+        //rest();
+    }
+    
+    public void rest(){
+    fac = 0;
+    tot = 0;
+    
+    
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
     // End of variables declaration//GEN-END:variables
 }
