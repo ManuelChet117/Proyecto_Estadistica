@@ -58,7 +58,7 @@ public class teo1 extends javax.swing.JFrame {
         jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, 110, 60));
 
-        jTextField3.setFont(new java.awt.Font("Quicksilver", 1, 36)); // NOI18N
+        jTextField3.setFont(new java.awt.Font("Quicksilver", 1, 18)); // NOI18N
         jTextField3.setForeground(new java.awt.Color(0, 0, 0));
         jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
@@ -66,7 +66,7 @@ public class teo1 extends javax.swing.JFrame {
                 jTextField3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, 340, 60));
+        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, 470, 60));
 
         jButton2.setText("B");
         jButton2.setPreferredSize(new java.awt.Dimension(24, 24));
@@ -109,24 +109,26 @@ public class teo1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    
     //Limpiando cajas de texto
     jTextField2.setText("");
     
     //Agregandole valor a la segunda caja de texto
     jTextField2.setText(jTextField1.getText() + "!");
 
-    //Convirtiendo el texto en una variable del tipo entera
-    n1 = Integer.parseInt(jTextField1.getText());
+    //Convirtiendo el texto en una variable del tipo long = larga
+    long n1;
+    n1 = Long.parseLong(jTextField1.getText());
     
     //Verificando por consola
     System.out.println(n1);
     
     //CREANDO VARIABLES LOCALES PARA EL FACTORIAL
-    int fac = 1;     
-    int numer = n1;
+    double fac = 1;     
+    long numer = n1;
     
     //Metodo de Factorial
-    for (int i = numer; i>0; i--){
+    for (double i = numer; i>0; i--){
     fac = fac*i;
     }
         System.out.println(fac);

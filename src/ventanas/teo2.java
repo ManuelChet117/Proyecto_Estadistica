@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package ventanas;
-
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 /**
  *
  * @author Manucho
@@ -29,12 +31,81 @@ public class teo2 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextField1.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
+        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 320, 60, -1));
+
+        jTextField2.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
+        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 320, 60, -1));
+
+        jTextField3.setFont(new java.awt.Font("Quicksilver", 1, 18)); // NOI18N
+        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 310, 120, 40));
+
+        jTextField4.setFont(new java.awt.Font("Quicksilver", 1, 18)); // NOI18N
+        jTextField4.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 360, 120, 40));
+
+        jTextField5.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
+        jTextField5.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 310, 60, -1));
+
+        jTextField6.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
+        jTextField6.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 360, 60, -1));
+
+        jTextField7.setFont(new java.awt.Font("Quicksilver", 1, 24)); // NOI18N
+        jTextField7.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 330, 120, 40));
+
+        jButton1.setText("C");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 410, 50, 40));
+
+        jLabel5.setFont(new java.awt.Font("Quicksand Medium", 0, 48)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("=");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 320, 30, -1));
+
+        jLabel4.setFont(new java.awt.Font("Quicksand Medium", 0, 48)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("=");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 320, 30, -1));
+
+        jLabel3.setFont(new java.awt.Font("Quicksand Medium", 0, 48)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("=");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 320, 30, -1));
 
         jLabel2.setFont(new java.awt.Font("Quicksand Medium", 1, 48)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -57,6 +128,76 @@ public class teo2 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       //DECLARANDO VARIABLES 
+       long n1, n2, subtot;
+       double tot, dou;
+       String mostrar, mostrarR;
+       
+       
+       //CONVIRTIENDO VALORES
+       n1 = Long.parseLong(jTextField1.getText());
+       n2 = Long.parseLong(jTextField2.getText());
+       
+       //VERIFICANDO 
+        System.out.println(n1);
+        System.out.println(n2);
+       
+       
+       
+       //OPERACION 1
+       subtot = n1-n2;
+       //VERIFICANDO
+       System.out.println(subtot);
+       
+       
+       //CONVIERTIENDO VALOR A TEXTO
+       mostrar = String.valueOf(subtot);
+       
+       //AGREGANDOLE TEXTO A LAS CAJAS DE TEXTO XD
+       jTextField3.setText(jTextField1.getText() + "!");
+       jTextField4.setText("(" + jTextField1.getText() + " - " + jTextField2.getText() + ")!");
+       jTextField5.setText(jTextField1.getText() + "!");
+       jTextField6.setText(mostrar + "!");
+       
+       //SUBTOT Y N1 PARA CREAR FACTORIAL
+       
+        // PRIMER FACTORIAL CREANDO VARIABLES LOCALES PARA EL FACTORIAL
+         double fac = 1;     
+         long numer = n1;
+    
+         //Metodo de Factorial
+         for (double i = numer; i>0; i--){
+          fac = fac*i;
+          }
+        System.out.println(fac);
+        
+        //SUBTOT
+        // PRIMER FACTORIAL CREANDO VARIABLES LOCALES PARA EL FACTORIAL
+         double fac2 = 1;     
+         long numer2 = subtot;
+    
+         //Metodo de Factorial
+         for (double i = numer2; i>0; i--){
+          fac2 = fac2*i;
+          }
+        System.out.println(fac2);
+        
+        //RESULTADO 
+       tot = (fac / fac2);
+       
+       //QUITANDOLE DECIMALES AL RESULTADO
+       dou = Math.round(tot*100.0)/100.0;
+       
+       System.out.println(tot);
+        
+        
+       mostrarR = String.valueOf(dou);
+       
+       jTextField7.setText(mostrarR);
+       
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -94,8 +235,19 @@ public class teo2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
     // End of variables declaration//GEN-END:variables
 }
