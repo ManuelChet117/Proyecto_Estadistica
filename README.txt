@@ -5,5 +5,5 @@
 #INTEGRANTES DEL GRUPO 
 Manuel Adrian Chet Samayoa 
 Edwin Eduardo Figueroa Santizo 
-Raul Eliseo Garcia 
+Raul Eliseo Garcia Garcia
 
