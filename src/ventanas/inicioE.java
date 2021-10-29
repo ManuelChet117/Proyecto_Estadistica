@@ -20,6 +20,8 @@ public class inicioE extends javax.swing.JFrame {
         initComponents();
         transparencia();
         this.setLocationRelativeTo(null);
+        this.setTitle("CALCULADORA PROBABILISTICA");
+        this.setResizable(false);
     }
     
     public void transparencia(){

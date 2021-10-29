@@ -13,6 +13,33 @@ public class teo1 extends javax.swing.JFrame {
    
     public teo1() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setTitle("CALCULADORA PROBABILISTICA");
+        this.setResizable(false);
+        transparencia();
+        tranparenciaTextos();
+    }
+    
+    public void transparencia(){
+    jButton1.setOpaque(false);
+    jButton1.setContentAreaFilled(false);
+    jButton1.setBorderPainted(false);
+    
+    jButton2.setOpaque(false);
+    jButton2.setContentAreaFilled(false);
+    jButton2.setBorderPainted(false);
+    
+    jButton3.setOpaque(false);
+    jButton3.setContentAreaFilled(false);
+    jButton3.setBorderPainted(false);
+   
+    }
+    
+    public void tranparenciaTextos(){
+    jTextField1.setBackground(new java.awt.Color(0,0,0,0));
+    jTextField2.setBackground(new java.awt.Color(0,0,0,0));
+    jTextField3.setBackground(new java.awt.Color(0,0,0,0));
+    
     }
     
     
@@ -32,6 +59,7 @@ public class teo1 extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
+        jButton3 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
@@ -42,18 +70,27 @@ public class teo1 extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextField1.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, 90, -1));
+        jTextField1.setBorder(null);
+        jTextField1.setOpaque(false);
+        jTextField1.setRequestFocusEnabled(false);
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, 90, 50));
 
         jTextField2.setFont(new java.awt.Font("Quicksilver", 1, 36)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField2.setForeground(new java.awt.Color(255, 255, 255));
         jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField2.setBorder(null);
+        jTextField2.setOpaque(false);
+        jTextField2.setRequestFocusEnabled(false);
         jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, 110, 60));
 
-        jTextField3.setFont(new java.awt.Font("Quicksilver", 1, 18)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField3.setFont(new java.awt.Font("Quicksilver", 1, 24)); // NOI18N
+        jTextField3.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField3.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        jTextField3.setBorder(null);
+        jTextField3.setOpaque(false);
+        jTextField3.setRequestFocusEnabled(false);
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);
@@ -61,23 +98,38 @@ public class teo1 extends javax.swing.JFrame {
         });
         jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, 470, 60));
 
-        jButton2.setText("B");
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/box.png"))); // NOI18N
+        jButton3.setPreferredSize(new java.awt.Dimension(24, 24));
+        jButton3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/box.png"))); // NOI18N
+        jButton3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/remenu.png"))); // NOI18N
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, 64, 64));
+
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/borrar (2).png"))); // NOI18N
         jButton2.setPreferredSize(new java.awt.Dimension(24, 24));
+        jButton2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/borrar (2).png"))); // NOI18N
+        jButton2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/bp.png"))); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 230, 50, 30));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 410, 64, 64));
 
-        jButton1.setText("C");
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/un-resultado-positivo-de-la-prueba-de-la-escuela.png"))); // NOI18N
         jButton1.setPreferredSize(new java.awt.Dimension(24, 24));
+        jButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/un-resultado-positivo-de-la-prueba-de-la-escuela.png"))); // NOI18N
+        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/un-resultado-positivo-de-la-prueba-de-la-escuela (1).png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 404, 50, 60));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 410, 64, 64));
 
         jLabel2.setFont(new java.awt.Font("Quicksand Medium", 0, 48)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -148,6 +200,12 @@ public class teo1 extends javax.swing.JFrame {
       
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+      Teoremas1 teoo1 = new Teoremas1();
+      teoo1.setVisible(true);
+      this.setVisible(false);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -189,6 +247,7 @@ public class teo1 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;

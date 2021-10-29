@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ventanas;
 
 /**
@@ -16,8 +12,43 @@ public class teo7 extends javax.swing.JFrame {
      */
     public teo7() {
         initComponents();
+         this.setLocationRelativeTo(null);
+        this.setTitle("CALCULADORA PROBABILISTICA");
+        this.setResizable(false);
+        tranparenciaTextos();
+        transparencia();
     }
 
+      public void transparencia(){
+    jButton1.setOpaque(false);
+    jButton1.setContentAreaFilled(false);
+    jButton1.setBorderPainted(false);
+    
+    jButton2.setOpaque(false);
+    jButton2.setContentAreaFilled(false);
+    jButton2.setBorderPainted(false);
+    
+     jButton3.setOpaque(false);
+    jButton3.setContentAreaFilled(false);
+    jButton3.setBorderPainted(false);
+   
+    }
+    
+    public void tranparenciaTextos(){
+      
+    jTextField2.setBackground(new java.awt.Color(0,0,0,0));
+    jTextField3.setBackground(new java.awt.Color(0,0,0,0));
+    jTextField4.setBackground(new java.awt.Color(0,0,0,0));
+    jTextField5.setBackground(new java.awt.Color(0,0,0,0));
+    jTextField6.setBackground(new java.awt.Color(0,0,0,0));
+   jTextField7.setBackground(new java.awt.Color(0,0,0,0));
+    
+       
+    
+   
+    
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -34,7 +65,9 @@ public class teo7 extends javax.swing.JFrame {
         jTextField5 = new javax.swing.JTextField();
         jTextField6 = new javax.swing.JTextField();
         jTextField7 = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -43,24 +76,32 @@ public class teo7 extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField2.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField2.setFont(new java.awt.Font("Quicksilver", 1, 24)); // NOI18N
+        jTextField2.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField2.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        jTextField2.setBorder(null);
+        jTextField2.setOpaque(false);
         jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, 60, 40));
 
-        jTextField3.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField3.setFont(new java.awt.Font("Quicksilver", 1, 24)); // NOI18N
+        jTextField3.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField3.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        jTextField3.setBorder(null);
+        jTextField3.setOpaque(false);
         jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 280, 60, 40));
 
-        jTextField4.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
-        jTextField4.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField4.setFont(new java.awt.Font("Quicksilver", 1, 24)); // NOI18N
+        jTextField4.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField4.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        jTextField4.setBorder(null);
+        jTextField4.setOpaque(false);
         jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 280, 80, 40));
 
         jTextField5.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
-        jTextField5.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField5.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField5.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        jTextField5.setBorder(null);
+        jTextField5.setOpaque(false);
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField5ActionPerformed(evt);
@@ -68,23 +109,50 @@ public class teo7 extends javax.swing.JFrame {
         });
         jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 380, 250, 40));
 
-        jTextField6.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
-        jTextField6.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField6.setFont(new java.awt.Font("Quicksilver", 1, 36)); // NOI18N
+        jTextField6.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField6.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        jTextField6.setBorder(null);
+        jTextField6.setOpaque(false);
         jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 380, 130, 40));
 
-        jTextField7.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
-        jTextField7.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField7.setFont(new java.awt.Font("Quicksilver", 1, 36)); // NOI18N
+        jTextField7.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField7.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        jTextField7.setBorder(null);
+        jTextField7.setOpaque(false);
         jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 480, 130, 40));
 
-        jButton1.setText("C");
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/borrar (2).png"))); // NOI18N
+        jButton2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/borrar (2).png"))); // NOI18N
+        jButton2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/bp.png"))); // NOI18N
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 480, 64, 64));
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/un-resultado-positivo-de-la-prueba-de-la-escuela.png"))); // NOI18N
+        jButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/un-resultado-positivo-de-la-prueba-de-la-escuela.png"))); // NOI18N
+        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/un-resultado-positivo-de-la-prueba-de-la-escuela (1).png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 480, 60, 40));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 480, 64, 64));
+
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/box.png"))); // NOI18N
+        jButton3.setPreferredSize(new java.awt.Dimension(24, 24));
+        jButton3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/box.png"))); // NOI18N
+        jButton3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/remenu.png"))); // NOI18N
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 560, 64, 64));
 
         jLabel5.setFont(new java.awt.Font("Quicksand Medium", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -147,6 +215,23 @@ public class teo7 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        //BORRANDO CAMPOS
+        jTextField2.setText("");
+        jTextField3.setText("");
+        jTextField4.setText("");
+        jTextField5.setText("");
+        jTextField6.setText("");
+        jTextField7.setText("");
+       
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        Teoremas2 teoo2 = new Teoremas2();
+        teoo2.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -184,6 +269,8 @@ public class teo7 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;

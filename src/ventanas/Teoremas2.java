@@ -20,6 +20,8 @@ public class Teoremas2 extends javax.swing.JFrame {
         initComponents();
         transparencia();
         this.setLocationRelativeTo(null);
+        this.setTitle("CALCULADORA PROBABILISTICA");
+        this.setResizable(false);
     }
     
     
@@ -40,6 +42,10 @@ public class Teoremas2 extends javax.swing.JFrame {
     jButton4.setContentAreaFilled(false);
     jButton4.setBorderPainted(false);
     
+    jButton5.setOpaque(false);
+    jButton5.setContentAreaFilled(false);
+    jButton5.setBorderPainted(false);
+    
    
     }
 
@@ -57,6 +63,7 @@ public class Teoremas2 extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -113,6 +120,17 @@ public class Teoremas2 extends javax.swing.JFrame {
         });
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 165, -1, 80));
 
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/re.png"))); // NOI18N
+        jButton5.setPreferredSize(new java.awt.Dimension(64, 64));
+        jButton5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/re.png"))); // NOI18N
+        jButton5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/rep.png"))); // NOI18N
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 480, -1, -1));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/menuImagenes/teoremas 2.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 930, 560));
@@ -155,6 +173,12 @@ public class Teoremas2 extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+       Teoremas1 teoo1 = new Teoremas1();
+       teoo1.setVisible(true);
+       this.setVisible(false);
+    }//GEN-LAST:event_jButton5ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -195,6 +219,7 @@ public class Teoremas2 extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
