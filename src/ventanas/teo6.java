@@ -28,11 +28,113 @@ public class teo6 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
+        jTextField8 = new javax.swing.JTextField();
+        jTextField9 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextField2.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
+        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 230, 60, 40));
+
+        jTextField3.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
+        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, 60, 40));
+
+        jTextField4.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
+        jTextField4.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, 60, 40));
+
+        jTextField5.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
+        jTextField5.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 360, 60, 40));
+
+        jTextField6.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
+        jTextField6.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 300, 170, 40));
+
+        jTextField7.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
+        jTextField7.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 360, 170, 40));
+
+        jTextField8.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
+        jTextField8.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 330, 170, 40));
+
+        jTextField9.setFont(new java.awt.Font("Quicksilver", 1, 22)); // NOI18N
+        jTextField9.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 450, 170, 40));
+
+        jButton1.setText("C");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 240, 60, 60));
+
+        jButton2.setText("B");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 330, 60, 60));
+
+        jLabel11.setFont(new java.awt.Font("Quicksand Medium", 0, 48)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("=");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 310, 30, 70));
+
+        jLabel10.setFont(new java.awt.Font("Quicksand Medium", 0, 48)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("=");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 30, 70));
+
+        jLabel9.setFont(new java.awt.Font("Microsoft Himalaya", 0, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("________");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 320, 70, 50));
+
+        jLabel8.setFont(new java.awt.Font("Quicksand Medium", 0, 90)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText(")");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 270, -1, 140));
+
+        jLabel7.setFont(new java.awt.Font("Quicksand Medium", 0, 90)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("( ");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 270, 170, 140));
+
+        jLabel6.setFont(new java.awt.Font("Microsoft Himalaya", 0, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("_______");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 240, 60, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/teoremasF/T6-01.jpg"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 930, 590));
@@ -50,6 +152,79 @@ public class teo6 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        //VARIABLES
+        long n1=0, n2=0, tot=0, totdefinitivo=0;
+        String respuesta;
+        
+        //CONVIRTIENDO TEXTO A DATO NUMERICO
+        n1 = Long.parseLong(jTextField2.getText());
+        n2 = Long.parseLong(jTextField3.getText());
+        
+        //ASIGNANDOLE VALOR A CAJA DE TEXTO
+        jTextField4.setText(jTextField2.getText());
+        jTextField5.setText(jTextField3.getText());
+        
+        //ASIGNANDOLE
+        jTextField6.setText(jTextField2.getText() + "!");
+        jTextField7.setText(jTextField3.getText() + "! ("+ jTextField2.getText() + " - " + jTextField3.getText()+")!");
+        
+        //METODO FACTORIAL
+        //PRIMER FACTORIAL 
+        long fac = 1;
+        long numer = n1;
+        for (long i = numer; i > 0; i--) {
+            fac = fac *i;
+        }//VERIFICANDO 
+        System.out.println("FACTORIAL N1");
+        System.out.println(fac);
+        
+        //METODO FACTORIAL
+        //SEGUNDO FACTORIAL
+        long fac1 = 1;
+        long numer1 = n2;
+        for (long i = numer1; i > 0; i--) {
+            fac1 = fac1 *i;
+        }//VERIFICANDO 
+        System.out.println("FACTORIAL N2");
+        System.out.println(fac1);
+        
+        tot = n1-n2;
+        //METODO FACTORIAL
+        //TERCER FACTORIAL
+        long fac3 = 1;
+        long numer3 = tot;
+        for (long i = numer3; i > 0; i--) {
+            fac3 = fac3 *i;
+        }//VERIFICANDO 
+        System.out.println("FACTORIAL PARENTESIS");
+        System.out.println(fac3);
+        
+        //REALIZANDO OPERACIONES
+        totdefinitivo= fac /(fac1 * fac3);
+        System.out.println(totdefinitivo);//VERIFICANDO RESULTADO 
+        
+        respuesta=String.valueOf(totdefinitivo);
+        
+        //ASIGNANDOLE LA RESPUESTA A LA CAJA DE TEXTO 
+        jTextField8.setText(respuesta);
+        jTextField9.setText(respuesta);
+        
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+     //BORRANDO CAMPOS
+     jTextField2.setText("");
+     jTextField3.setText("");
+     jTextField4.setText("");
+     jTextField5.setText("");
+     jTextField6.setText("");
+     jTextField7.setText("");
+     jTextField8.setText("");
+     jTextField9.setText("");
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -87,7 +262,23 @@ public class teo6 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 }
