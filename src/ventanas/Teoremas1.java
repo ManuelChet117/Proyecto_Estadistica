@@ -101,6 +101,11 @@ public class Teoremas1 extends javax.swing.JFrame {
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/3.png"))); // NOI18N
         jButton3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/3.png"))); // NOI18N
         jButton3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/3p.png"))); // NOI18N
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 190, -1, -1));
 
         jButton4.setFont(new java.awt.Font("Quicksilver", 1, 40)); // NOI18N
@@ -108,6 +113,11 @@ public class Teoremas1 extends javax.swing.JFrame {
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/4.png"))); // NOI18N
         jButton4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/4.png"))); // NOI18N
         jButton4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/4p.png"))); // NOI18N
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 185, -1, 70));
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/next.png"))); // NOI18N
@@ -156,6 +166,18 @@ public class Teoremas1 extends javax.swing.JFrame {
      this.setVisible(false);
     }//GEN-LAST:event_jButton5ActionPerformed
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+       teo3 t3 = new teo3();
+       t3.setVisible(true);
+       this.setVisible(false);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+      teo4 t4 = new teo4();
+      t4.setVisible(true);
+      this.setVisible(false);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -183,7 +205,7 @@ public class Teoremas1 extends javax.swing.JFrame {
         }
         //</editor-fold>
 
-        /* Create and display the form */
+        /* Create and display ssssthe form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Teoremas1().setVisible(true);
