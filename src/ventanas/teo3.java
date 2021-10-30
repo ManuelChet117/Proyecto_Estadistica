@@ -120,11 +120,11 @@ public class teo3 extends javax.swing.JFrame {
                 jTextField5ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 360, 80, -1));
+        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 360, 170, -1));
 
         jTextField6.setFont(new java.awt.Font("Quicksilver", 1, 24)); // NOI18N
         jTextField6.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField6.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         jTextField6.setBorder(null);
         jTextField6.setOpaque(false);
         jTextField6.addActionListener(new java.awt.event.ActionListener() {
@@ -132,7 +132,7 @@ public class teo3 extends javax.swing.JFrame {
                 jTextField6ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 490, 90, 40));
+        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 490, 250, 40));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/borrar (2).png"))); // NOI18N
         jButton2.setPreferredSize(new java.awt.Dimension(24, 24));

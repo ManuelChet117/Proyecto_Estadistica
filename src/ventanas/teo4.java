@@ -12,7 +12,7 @@ public class teo4 extends javax.swing.JFrame {
      */
     public teo4() {
         initComponents();
-         this.setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null);
         this.setTitle("CALCULADORA PROBABILISTICA");
         this.setResizable(false);
         tranparenciaTextos();
@@ -275,7 +275,8 @@ public class teo4 extends javax.swing.JFrame {
     }
     
     public void addn(){
-     String muestra;
+     
+        String muestra;
         
      //AGREGANDOLE TEXTO 
     jTextField4.setText(jTextField4.getText()+ jTextField2.getText()+"! "); 
@@ -334,11 +335,7 @@ public class teo4 extends javax.swing.JFrame {
         jTextField6.setText(RespuestaDefi);
         
     
-    
-    //
-       //totaldefi = fac2 / fact;
-       // System.out.println(totaldefi);
-    //jTextField5.setText();
+   
     
     }
     

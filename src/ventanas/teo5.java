@@ -322,13 +322,6 @@ public class teo5 extends javax.swing.JFrame {
         jTextField5.setText(RespuestaDefi);
         jTextField6.setText(RespuestaDefi);
         
-    
-    
-    //
-       //totaldefi = fac2 / fact;
-       // System.out.println(totaldefi);
-    //jTextField5.setText();
-    
     }
   
 
