@@ -19,7 +19,7 @@ public class teo4 extends javax.swing.JFrame {
         transparencia();
     }
     
-      public void transparencia(){
+    public void transparencia(){
     jButton1.setOpaque(false);
     jButton1.setContentAreaFilled(false);
     jButton1.setBorderPainted(false);
@@ -156,7 +156,7 @@ public class teo4 extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 390, 64, 64));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 390, 80, 64));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/un-resultado-positivo-de-la-prueba-de-la-escuela.png"))); // NOI18N
         jButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/un-resultado-positivo-de-la-prueba-de-la-escuela.png"))); // NOI18N
@@ -217,7 +217,6 @@ public class teo4 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         addn();
-        
     
     }//GEN-LAST:event_jButton1ActionPerformed
 

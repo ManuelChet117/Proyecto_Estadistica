@@ -74,7 +74,6 @@ public class teo1 extends javax.swing.JFrame {
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField1.setBorder(null);
         jTextField1.setOpaque(false);
-        jTextField1.setRequestFocusEnabled(false);
         jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, 90, 50));
 
         jTextField2.setFont(new java.awt.Font("Quicksilver", 1, 36)); // NOI18N
