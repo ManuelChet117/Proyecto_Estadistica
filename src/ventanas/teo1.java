@@ -1,5 +1,7 @@
 package ventanas;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Manucho
@@ -163,7 +165,7 @@ public class teo1 extends javax.swing.JFrame {
     //Convirtiendo el texto en una variable del tipo long = larga
     long n1;
     n1 = Long.parseLong(jTextField1.getText());
-    
+    if (n1 > 0){
     //Verificando por consola
     System.out.println(n1);
     
@@ -183,7 +185,8 @@ public class teo1 extends javax.swing.JFrame {
     //Asignandole texto a la ultima caja de texto
     jTextField3.setText(mostrar);
         
-    
+    }
+    else{JOptionPane.showMessageDialog(null, "EL FACTORIAL TIENE QUE SER POSITIVO");}
 
         
     }//GEN-LAST:event_jButton1ActionPerformed
