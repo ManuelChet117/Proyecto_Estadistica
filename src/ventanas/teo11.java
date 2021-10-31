@@ -3,6 +3,7 @@ package ventanas;
 import java.util.*;
 import java.lang.*;
 import java.io.*;
+import javax.swing.JOptionPane;
 
 
 
@@ -179,6 +180,9 @@ public class teo11 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+
+
+
         //DECLARANDO VARIABLES
         double nu1, nu2, tot1, redondeo;
         String respuesta;        
@@ -186,7 +190,7 @@ public class teo11 extends javax.swing.JFrame {
         //CONVIERTIENDO VALORES
         nu1 = Double.parseDouble(jTextField2.getText());
         nu2 = Double.parseDouble(jTextField3.getText());
-
+if (nu1>0 && nu2>0){
         //AGREGANDOLE VALOR AL TEXT FIELD
         jTextField4.setText("(" + jTextField2.getText() + ") (" + jTextField3.getText() + ")");
 
@@ -207,7 +211,9 @@ public class teo11 extends javax.swing.JFrame {
         //MOSTRANDO RESULTADO
         jTextField5.setText(respuesta);
         jTextField6.setText(respuesta);
-
+        }else {JOptionPane.showMessageDialog(null,"LA PROBABILIDAD TIENE QUE SER MAYOR A 0");
+}
+       
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

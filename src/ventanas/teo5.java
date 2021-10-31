@@ -207,12 +207,12 @@ public class teo5 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        jTextField2.setText("");
+        //jTextField2.setText("");
         
-        jTextField3.setText("");
-        jTextField4.setText("");
-        jTextField5.setText("");
-        jTextField6.setText("");
+        //jTextField3.setText("");
+        //jTextField4.setText("");
+        //jTextField5.setText("");
+        //jTextField6.setText("");
         
         teo5 t5 = new teo5();
         t5.setVisible(true);

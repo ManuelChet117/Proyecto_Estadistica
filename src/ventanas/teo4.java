@@ -148,7 +148,6 @@ public class teo4 extends javax.swing.JFrame {
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 570, 64, 64));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/borrar (2).png"))); // NOI18N
-        jButton2.setText("b");
         jButton2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/borrar (2).png"))); // NOI18N
         jButton2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/iconosN/bp.png"))); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -221,11 +220,11 @@ public class teo4 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        jTextField2.setText("");
-        jTextField3.setText("");
-        jTextField4.setText("");
-        jTextField5.setText("");
-        jTextField6.setText("");
+        //jTextField2.setText("");
+        //jTextField3.setText("");
+        //jTextField4.setText("");
+        //jTextField5.setText("");
+        //jTextField6.setText("");
         
         teo4 t4 = new teo4();
         t4.setVisible(true);
